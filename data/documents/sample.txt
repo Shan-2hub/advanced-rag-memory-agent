@@ -1,0 +1,54 @@
+
+Retrieval Augmented Generation (RAG)
+
+Retrieval Augmented Generation is an AI architecture
+that combines information retrieval with large language
+models. It allows AI systems to retrieve external
+knowledge before generating responses.
+
+Hybrid retrieval combines dense vector search and
+sparse keyword search. Dense retrieval identifies
+semantic similarities between queries and documents,
+while sparse retrieval identifies exact keyword matches.
+
+Reciprocal Rank Fusion combines multiple retrieval
+rankings into a unified ranking. This helps improve
+retrieval quality by combining the strengths of
+different search methods.
+
+Reranking improves retrieval accuracy by evaluating
+the relevance of candidate documents against the
+original user query. Cohere provides reranking models
+that can identify the most relevant documents.
+
+Semantic memory allows AI agents to retain user
+preferences and important facts across conversations.
+Mem0 provides persistent memory capabilities that
+can be used to personalize AI assistant responses.
+
+Retrieval Augmented Generation (RAG)
+
+Retrieval Augmented Generation is an AI architecture
+that combines information retrieval with large language
+models. It allows AI systems to retrieve external
+knowledge before generating responses.
+
+Hybrid retrieval combines dense vector search and
+sparse keyword search. Dense retrieval identifies
+semantic similarities between queries and documents,
+while sparse retrieval identifies exact keyword matches.
+
+Reciprocal Rank Fusion combines multiple retrieval
+rankings into a unified ranking. This helps improve
+retrieval quality by combining the strengths of
+different search methods.
+
+Reranking improves retrieval accuracy by evaluating
+the relevance of candidate documents against the
+original user query. Cohere provides reranking models
+that can identify the most relevant documents.
+
+Semantic memory allows AI agents to retain user
+preferences and important facts across conversations.
+Mem0 provides persistent memory capabilities that
+can be used to personalize AI assistant responses.

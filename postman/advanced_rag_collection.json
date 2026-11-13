@@ -1,0 +1,78 @@
+
+{
+  "info": {
+    "name": "Advanced RAG Memory Agent",
+    "description": "API collection for hybrid RAG, Cohere reranking and Mem0 semantic memory.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "base_url",
+      "value": "http://localhost:8000"
+    },
+    {
+      "key": "user_id",
+      "value": "usr_99"
+    }
+  ],
+  "item": [
+    {
+      "name": "Health Check",
+      "request": {
+        "method": "GET",
+        "url": "{{base_url}}/health"
+      }
+    },
+    {
+      "name": "Chat - Hybrid RAG",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"query\": \"Explain how hybrid retrieval works\",\n  \"user_id\": \"{{user_id}}\",\n  \"session_id\": \"session_001\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "{{base_url}}/api/chat"
+      }
+    },
+    {
+      "name": "Get User Memories",
+      "request": {
+        "method": "GET",
+        "url": "{{base_url}}/api/users/{{user_id}}/memories"
+      }
+    },
+    {
+      "name": "New Session - Persona Test",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"query\": \"Write a quick merge sort routine.\",\n  \"user_id\": \"{{user_id}}\",\n  \"session_id\": \"session_002\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "{{base_url}}/api/chat"
+      }
+    }
+  ]
+}
