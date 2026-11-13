@@ -51,6 +51,7 @@ def chat(request: ChatRequest):
             for document in documents
         )
 
+
         if not context:
             context = "No relevant knowledge documents found."
 
